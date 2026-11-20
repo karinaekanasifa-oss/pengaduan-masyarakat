@@ -14,6 +14,8 @@ class CleanupLog extends Model
     // Menegaskan ke Laravel kalau model ini nyambungnya ke tabel database bernama 'cleanup_logs'
     protected $table = 'cleanup_logs';
 
+    protected $primaryKey = 'id_log';
+
     // Kotak pengaman ($fillable): Daftar kolom yang diizinkan untuk diisi data secara massal
     protected $fillable = [
         'id_laporan',       // ID laporan sampah yang sedang dikerjakan

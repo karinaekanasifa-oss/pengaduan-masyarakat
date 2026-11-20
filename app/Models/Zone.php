@@ -12,7 +12,10 @@ class Zone extends Model
     use HasFactory;
 
     // Menegaskan ke Laravel kalau model "Zone" ini pasangannya sama tabel database bernama 'zones'
-    protected $table = 'zones';
+    protected$table = 'zones';
+
+    // Menegaskan primary key tabel ini adalah 'id_zona' (karena bukan pakai 'id' standar)
+    protected $primaryKey = 'id_zona';
 
     // Kotak pengaman ($fillable): Kolom apa aja di tabel 'zones' yang boleh diisi datanya
     protected $fillable = [

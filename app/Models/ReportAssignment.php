@@ -14,6 +14,9 @@ class ReportAssignment extends Model
     // Menegaskan ke Laravel kalau model ini nyambungnya ke tabel database bernama 'report_assignments'
     protected $table = 'report_assignments';
 
+    // Menegaskan primary key tabel ini adalah 'id_penugasan'
+    protected $primaryKey = 'id_penugasan';
+
     // Kotak pengaman ($fillable): Daftar kolom yang diizinkan untuk diisi data secara massal
     protected $fillable = [
         'id_laporan',       // ID laporan sampah yang mau dikerjakan

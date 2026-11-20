@@ -21,7 +21,7 @@ return new class extends Migration
             $table->unsignedBigInteger('id_petugas');
 
             // Perubahan status pengerjaan terkini
-            $table->enum('status_perubahan', ['ditugaskan', 'sedang dibersihkan', 'selesai']);
+            $table->enum('status_perubahan', ['ditugaskan', 'sedangdibersihkan', 'selesai']);
 
             // Foto bukti lokasi setelah dibersihkan (diunggah oleh petugas)
             $table->string('foto_bukti')->nullable();

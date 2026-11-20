@@ -16,6 +16,9 @@ class User extends Authenticatable
     // Menegaskan nama tabel di database
     protected $table = 'users';
 
+    // Menegaskan primary key tabel ini adalah 'id_pengguna'
+    protected $primaryKey = 'id_pengguna';
+
     // Kolom yang boleh diisi datanya (sesuai ERD dan kebutuhan input)
     protected $fillable = [
         'id_zona',

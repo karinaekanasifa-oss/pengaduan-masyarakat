@@ -14,6 +14,9 @@ class WasteReport extends Model
     // Menegaskan ke Laravel kalau model ini nyambungnya ke tabel database bernama 'waste_reports'
     protected $table = 'waste_reports';
 
+    // Menegaskan primary key tabel ini adalah 'id_laporan' (Sesuai ERD)
+    protected $primaryKey = 'id_laporan';
+
     // Kotak pengaman ($fillable): Daftar kolom yang diizinkan untuk diisi data secara massal (mass assignment)
     protected $fillable = [
         'id_pelapor',        // ID warga yang ngirim laporan
